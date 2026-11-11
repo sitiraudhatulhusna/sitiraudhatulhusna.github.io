@@ -1,5 +1,5 @@
-// ===== Change this to your real email =====
-const EMAIL = "you@email.com";
+
+const EMAIL = "raudha09@gmail.com";
 
 document.documentElement.classList.add("js");
 
