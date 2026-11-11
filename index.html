@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Siti Raudhatul Husna — Front-end Developer</title>
+  <meta name="description" content="Portfolio of Siti Raudhatul Husna, a front-end developer who builds clean, friendly and responsive websites.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=DM+Sans:opsz,wght@9..40,400..600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <!-- Reusable folder icon (used in About + Contact) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="folder" viewBox="0 0 64 52">
+      <path d="M4 6a4 4 0 0 1 4-4h14l6 6h28a4 4 0 0 1 4 4v32a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#4E9DE6"/>
+      <path d="M4 16a4 4 0 0 1 4-4h48a4 4 0 0 1 4 4v28a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4z" fill="#7CC0F8"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a class="nav__logo" href="#top">husna<span>.</span></a>
+
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav__right">
+        <a class="nav__cta" href="#contact">Say hi</a>
+        <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container" id="top">
+      <div class="hero__card">
+        <span class="sticker sticker--blue">front-end dev</span>
+        <span class="sticker sticker--pink">open to internships</span>
+
+        <!-- doodles -->
+        <svg class="doodle doodle--spark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M20 2c1.5 9 4 12 18 18-14 6-16.5 9-18 18-1.5-9-4-12-18-18 14-6 16.5-9 18-18z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <svg class="doodle doodle--arrow" viewBox="0 0 80 60" aria-hidden="true">
+          <path d="M4 8c22-6 40 2 36 18-3 12-20 10-16-2 5-14 34-10 46 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M62 40l8 8 4-11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <p class="label">(00) — hello, world</p>
+        <h1 class="hero__title">
+          Hi!
+          I'm Husna.<br>
+          I build websites that feel <em>friendly</em>.
+        </h1>
+        <p class="hero__lead">
+          Computer Science(Multimedia Computing) student at Universiti Putra Malaysia (UPM).
+
+          I turn ideas and designs into clean, responsive and accessible pages.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--dark" href="#work">See my work <span aria-hidden="true">→</span></a>
+          <a class="btn btn--ghost" href="cv.pdf" download>Download CV</a>
+        </div>
+      </div>
+
+      <div class="quicklinks">
+        <a class="quick reveal" href="#work">
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <rect x="5" y="9" width="38" height="28" rx="3"/><path d="M5 16h38M10 12.5h1M14 12.5h1M18 12.5h1M15 30l5-5-5-5M24 30h8"/>
+          </svg>
+          <span class="quick__title">My Work</span>
+          <span class="quick__text">Projects I've designed and coded.</span>
+          <span class="quick__arrow quick__arrow--blue" aria-hidden="true">→</span>
+        </a>
+        <a class="quick reveal" href="#about">
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="18" r="8"/><path d="M9 41c2-9 8-13 15-13s13 4 15 13"/>
+          </svg>
+          <span class="quick__title">About Me</span>
+          <span class="quick__text">Who I am, what I study and what I'm learning.</span>
+          <span class="quick__arrow quick__arrow--yellow" aria-hidden="true">→</span>
+        </a>
+        <a class="quick reveal" href="#contact">
+          <svg viewBox="0 0 48 48" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="12" width="36" height="26" rx="3"/><path d="M6 15l18 13 18-13"/>
+          </svg>
+          <span class="quick__title">Contact Me</span>
+          <span class="quick__text">Like what you see? Let's build something together.</span>
+          <span class="quick__arrow quick__arrow--green" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section container" id="about">
+      <h2 class="selected-title reveal"><span>about me</span></h2>
+
+      <div class="about-grid">
+        <figure class="polaroid reveal">
+        <img src="images/me.jpg" alt="Husna smiling at the camera">
+          <figcaption>that's me!</figcaption>
+        </figure>
+
+        <div class="card about-text reveal">
+          <p class="about-text__big">
+            I'm a student who fell in love with web development because I like seeing ideas
+            turn into something people can click, use and enjoy.
+          </p>
+          <p>
+           I care about good design and clean code. I’m eager to take on new challenges, learn from experienced developers and gain real industry experience.
+          </p>
+          <p class="status"><span class="status__dot" aria-hidden="true"></span> Available for an internship from [March 2027]</p>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Education</h3>
+         <ul class="edu">
+  <li>
+    <svg class="edu__icon" aria-hidden="true"><use href="#folder"/></svg>
+    <div>
+      <strong>Bachelor of Computer Science (Multimedia Computing)</strong>
+      <span>Universiti Putra Malaysia · 2023 – present · CGPA 3.68</span>
+    </div>
+  </li>
+  <li>
+  <svg class="edu__icon" aria-hidden="true"><use href="#folder"/></svg>
+  <div>
+    <strong>Foundation in Life Science</strong>
+    <span>Negeri Sembilan Matriculation College · 2022 – 2023 · CGPA 3.92</span>
+  </div>
+</li>
+</ul>
+        </div>
+
+        <div class="card reveal">
+          <h3 class="card__title">Languages</h3>
+          <div class="bubbles">
+            <p class="bubble bubble--left"><strong>Bahasa Melayu</strong> — native</p>
+            <p class="bubble bubble--right"><strong>English</strong> — fluent</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section container" id="work">
+      <h2 class="big-title reveal">selected <em>work</em></h2>
+
+      <nav class="toc reveal" aria-label="Projects">
+        <a class="toc__item" href="#project-1">
+          <span class="label">(01)</span>
+          <span class="toc__tile toc__tile--yellow" aria-hidden="true">1</span>
+          <span class="pill pill--yellow">BizTrack</span>
+        </a>
+        <a class="toc__item" href="#project-2">
+          <span class="label">(02)</span>
+          <span class="toc__tile toc__tile--green" aria-hidden="true">2</span>
+          <span class="pill pill--green">Clear Day</span>
+        </a>
+        <a class="toc__item" href="#project-3">
+          <span class="label">(03)</span>
+          <span class="toc__tile toc__tile--pink" aria-hidden="true">3</span>
+         <span class="pill pill--pink">Daily Bite</span>
+        </a>
+      </nav>
+
+      <div class="projects">
+        <!-- PROJECT 1 -->
+        <article class="project reveal" id="project-1">
+          <div class="project__info">
+            <p class="label">(01) · 2026 · <span class="wip">In progress</span></p>
+<h3 class="project__title">BizTrack - Student Etrepreneurship Development Monitoring System 
+
+</h3>
+<ul class="tags" aria-label="Built with">
+  <li>React</li><li>Tailwind CSS</li><li>Vite</li><li>Firebase</li>
+</ul>
+<p class="project__desc">
+  My final year project: a web platform for CEM UPM that replaces Google Forms and spreadsheets.
+  Students register businesses, upload SSM documents and track sales, while admins review
+  applications and monitor everything from one dashboard.
+</p>
+          </div>
+          <div class="project__shot project__shot--yellow">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+              <img src="images/project-1.png" alt="BizTrack dashboard">
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project reveal" id="project-2">
+          <div class="project__info">
+          <p class="label">(02) · 2026 · Web Application Development [SSE3308]</p>
+<h3 class="project__title">Clear Day</h3>
+<ul class="tags" aria-label="Built with">
+  <li>React</li><li>CSS</li><li>Firebase Hosting</li>
+</ul>
+<p class="project__desc">
+  An everyday haze companion for Malaysians. Enter an Air Pollutant Index reading and it explains
+  what it means in plain language, with simple safety tips for outdoors and at home.
+</p>
+<div class="project__links">
+  <a class="btn btn--dark btn--sm" href="https://haze-0808.web.app/" target="_blank" rel="noopener">Live demo ↗</a>
+</div>
+          </div>
+          <div class="project__shot project__shot--green">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="images/project-2.png" alt="Clear Day app">
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project reveal" id="project-3">
+          <div class="project__info">
+           <p class="label">(03) · 2026 · Web Application Development [SSE3308]</p>
+<h3 class="project__title">Daily Bite</h3>
+<ul class="tags" aria-label="Built with">
+  <li>JavaScript</li><li>Tailwind CSS</li><li>Firebase Hosting</li>
+</ul>
+<p class="project__desc">
+  A food delivery website with a playful, local feel. Users can search for dishes, filter by
+  cuisine, browse restaurants and add meals to their cart.
+</p>
+<div class="project__links">
+  <a class="btn btn--dark btn--sm" href="https://dailybiteeeee.web.app/" target="_blank" rel="noopener">Live demo ↗</a>
+</div>
+          </div>
+          <div class="project__shot project__shot--pink">
+            <div class="browser">
+              <div class="browser__bar" aria-hidden="true"><i></i><i></i><i></i></div>
+            <img src="images/project-3.png" alt="Daily Bite app">
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section container" id="skills">
+      <h2 class="big-title reveal">my <em>toolbox</em></h2>
+
+      <div class="skills-grid">
+        <div class="card skill-card reveal">
+          <h3 class="card__title">Languages</h3>
+          <ul class="scatter">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li>
+          </ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="card__title">Frameworks</h3>
+          <ul class="scatter">
+            <li>React</li><li>Tailwind CSS</li><li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3 class="card__title">Tools</h3>
+          <ul class="scatter">
+            <li>Git &amp; GitHub</li><li>VS Code</li><li>Figma</li><li>Canva</li>
+          </ul>
+        </div>
+        <div class="card card--dark skill-card reveal">
+          <h3 class="card__title">Currently learning</h3>
+          <p class="learning">[e.g. React hooks, web accessibility and writing cleaner CSS.]</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section container" id="contact">
+      <div class="window reveal">
+        <div class="window__bar">
+          <span class="window__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="window__title">~/husna/contact</span>
+        </div>
+
+        <div class="desktop" id="desktop">
+          <h2 class="big-title big-title--center">let's work <em>together</em></h2>
+         
+
+          <ul class="folders">
+            <li>
+              <a class="folder" href="mailto:[raudha09@gmail.com]" target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#folder"/></svg>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a class="folder" href="https://github.com/sitiraudhatulhusna" target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#folder"/></svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+             
+             <a class="folder" href="https://mail.google.com/mail/?view=cm&fs=1&to=raudha09@gmail.com&su=Internship%20opportunity" target="_blank" rel="noopener">
+                <svg aria-hidden="true"><use href="#folder"/></svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="folder" href="cv.pdf" download>
+                <svg aria-hidden="true"><use href="#folder"/></svg>
+                <span>CV resume</span>
+              </a>
+            </li>
+          </ul>
+
+          <p class="desktop__hint">psst… try right-clicking here</p>
+        </div>
+      </div>
+
+      <!-- Custom right-click menu (desktop only) -->
+      <div class="context-menu" id="context-menu" hidden>
+        <button type="button" data-action="copy-email">Copy email</button>
+        <a href="https://github.com/sitiraudhatulhusna" target="_blank" rel="noopener">Open GitHub</a>
+        <a href="cv.pdf" download>Download CV</a>
+        <hr>
+        <button type="button" data-action="top">Back to top</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© <span id="year">2026</span> Siti Raudhatul Husna</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
