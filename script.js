@@ -1,4 +1,3 @@
-
 const EMAIL = "raudha09@gmail.com";
 
 document.documentElement.classList.add("js");
